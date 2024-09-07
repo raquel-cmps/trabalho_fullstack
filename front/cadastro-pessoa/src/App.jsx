@@ -16,12 +16,10 @@ function App() {
     try {
       const response = await fetch(baseUrl + 'pessoa');
       const data = await response.json();
-      console.log(data);
 
       setPessoa(data);
 
     } catch (error) {
-      console.log(error);
     }
   }
   const createPessoa = async (nome, cpf, telefone) => {
@@ -31,7 +29,6 @@ function App() {
         cpf,
         telefone
       }
-      console.log('Request data:', requestData);
       const response = await fetch(baseUrl + 'pessoa/', {
         method: 'POST',
         headers: {
@@ -41,7 +38,6 @@ function App() {
       });
 
       const data = await response.json();
-      console.log('Response data:', data);
 
       if (response.ok) {
         alert('Pessoa criada com sucesso!');
@@ -79,7 +75,6 @@ function App() {
         cpf: pessoaEditada.cpf,
         telefone: pessoaEditada.telefone
       };
-      console.log('Request data:', requestData);
       const response = await fetch(baseUrl + 'pessoa/' + pessoaEditada.id, {
         method: 'PUT',
         headers: {

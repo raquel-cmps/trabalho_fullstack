@@ -1,6 +1,7 @@
 # Projeto de Desenvolvimento Web
 
 Este é um projeto desenvolvido para a disciplina de **Desenvolvimento Web**. O objetivo do trabalho é construir uma aplicação full-stack utilizando tecnologias modernas para o desenvolvimento de front-end e back-end.
+[image](./image): contém imagens do sistema funcionando.
 
 ## Descrição
 
